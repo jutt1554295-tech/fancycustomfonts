@@ -1,7 +1,13 @@
 import type { RealFont } from "@/data/fontCatalog";
 
 export function fontFamilyStack(font: RealFont) {
-  return `"${font.fontFamily}", ${font.fallback}`;
+  const family = font.fontFamily.trim();
+
+  if (family.startsWith("var(")) {
+    return `${family}, ${font.fallback}`;
+  }
+
+  return `"${family}", ${font.fallback}`;
 }
 
 export function fontFaceRules(fonts: readonly RealFont[]) {

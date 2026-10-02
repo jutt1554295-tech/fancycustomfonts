@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Audiowide&family=Baloo+2:wght@400;600;700;800&family=Bebas+Neue&family=Black+Ops+One&family=Bubblegum+Sans&family=Chango&family=Chewy&family=Chicle&family=Coiny&family=Caveat:wght@400;500;600;700&family=Fascinate&family=Fredoka:wght@400;500;600;700&family=Great+Vibes&family=Lilita+One&family=Lobster&family=Luckiest+Guy&family=Modak&family=Monoton&family=Orbitron:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&family=Pacifico&family=Permanent+Marker&family=Press+Start+2P&family=Righteous&family=Rock+Salt&family=Satisfy&family=Titan+One&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -185,7 +186,9 @@ h1,h2,h3,p { margin-top: 0; }
 .style-card-meta { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .style-category { overflow: hidden; color: var(--cyan); font-size: 14px; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
 .style-name { overflow: hidden; color: #808ba2; font-size: 18px; font-weight: 700; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
-.style-preview { display: -webkit-box; min-height: 39px; overflow: hidden; margin: 14px 0 12px; color: #f0f4ff; font-family: var(--display); font-size: 24px; font-weight: 600; line-height: 1.6; overflow-wrap: anywhere; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.style-preview { display: -webkit-box; min-height: 39px; overflow: hidden; margin: 14px 0 12px; color: #f0f4ff; font-family: var(--display); font-size: 24px; font-weight: 600; line-height: 1.6; overflow-wrap: anywhere; -webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+line-clamp: 2;; }
 .explorer-library .search-field input { font-size: 16px; font-weight: 600; }
 .explorer-library .search-field input::placeholder { font-size: 16px; font-weight: 500; }
 .explorer-library .category-chip { padding-inline: 13px; font-size: 15px; font-weight: 600; }

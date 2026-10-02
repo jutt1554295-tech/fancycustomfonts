@@ -46,26 +46,88 @@ const font = (
   license?: FontLicense,
   available = false,
   fontWeightRange?: string,
-): RealFont => ({
-  id,
-  name,
-  category,
-  fontFamily: name,
-  filePath: `/fonts/${id}.woff2`,
-  tags,
-  description,
-  featured,
-  available,
-  fallback,
-  ...(license ? { license } : {}),
-  ...(fontWeightRange ? { fontWeightRange } : {}),
-});
+): RealFont => {
+  const actualFont = googleFontVariables[id];
+  const isGoogleFont = Boolean(actualFont);
+
+  const finalLicense =
+    license ??
+    (googleFontLicenseSlugs[id]
+      ? googleFontsOfl(googleFontLicenseSlugs[id])
+      : undefined);
+
+  return {
+    id,
+    name,
+    category,
+    fontFamily: actualFont ?? name,
+    filePath: actualFont ? "" : `/fonts/${id}.woff2`,
+    tags,
+    description,
+    featured,
+    available: available || isGoogleFont,
+    fallback,
+    ...(finalLicense ? { license: finalLicense } : {}),
+    ...(fontWeightRange ? { fontWeightRange } : {}),
+  };
+};
 
 const googleFontsOfl = (family: string): FontLicense => ({
   name: "SIL Open Font License 1.1",
   source: `https://github.com/google/fonts/blob/main/ofl/${family}/OFL.txt`,
 });
 
+const googleFontVariables: Record<string, string> = {
+  "bubblegum-sans": "Bubblegum Sans",
+  chewy: "Chewy",
+  fredoka: "Fredoka",
+  "baloo-2": "Baloo 2",
+  "lilita-one": "Lilita One",
+  modak: "Modak",
+  chango: "Chango",
+  chicle: "Chicle",
+  coiny: "Coiny",
+  fascinate: "Fascinate",
+  bungee: "Bungee",
+  "titan-one": "Titan One",
+  "luckiest-guy": "Luckiest Guy",
+  "black-ops-one": "Black Ops One",
+  "press-start-2p": "Press Start 2P",
+  audiowide: "Audiowide",
+  orbitron: "Orbitron",
+  righteous: "Righteous",
+  unbounded: "Unbounded",
+  monoton: "Monoton",
+  lobster: "Lobster",
+  pacifico: "Pacifico",
+  satisfy: "Satisfy",
+  "great-vibes": "Great Vibes",
+  caveat: "Caveat",
+  "permanent-marker": "Permanent Marker",
+  "rock-salt": "Rock Salt",
+  "bebas-neue": "Bebas Neue",
+  anton: "Anton",
+  oswald: "Oswald",
+  "dancing-script": "Dancing Script",
+  sacramento: "Sacramento",
+  allura: "Allura",
+  parisienne: "Parisienne",
+  "alex-brush": "Alex Brush",
+  "marck-script": "Marck Script",
+};
+
+const googleFontLicenseSlugs: Record<string, string> = {
+  fredoka: "fredoka",
+  chewy: "chewy",
+  "lilita-one": "lilitaone",
+  bungee: "bungee",
+  "press-start-2p": "pressstart2p",
+  orbitron: "orbitron",
+  "great-vibes": "greatvibes",
+  lobster: "lobster",
+  caveat: "caveat",
+  anton: "anton",
+};
 export const fontCatalog: readonly RealFont[] = [
   font("bubblegum-sans", "Bubblegum Sans", "Bubble", ["bubble", "rounded", "cute", "kids"], "A soft, rounded display face for cheerful short messages.", "cursive", true),
   font("chewy", "Chewy", "Cartoon", ["cartoon", "playful", "kids", "chunky"], "A playful hand-drawn style for friendly titles and names.", "cursive", true),
