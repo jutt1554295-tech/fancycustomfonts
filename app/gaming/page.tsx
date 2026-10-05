@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: { title: "Gaming Names and Stylish Gamer Text | FancyCustomFonts", description: "Find a distinctive Unicode look for your gaming name and profile.", url: `${siteUrl}/gaming` },
 };
 
-const ideas = ["Ｎｏｖａ", "『Nightfall』", "꧁Echo꧂", "𝐕𝐚𝐥𝐨𝐫", "✦ Orbit ✦", "乂Drift乂"];
+const ideas = ["Ｎｏｖａ", "『NightRider』", "꧁Echo꧂", "𝐕𝐚𝐥𝐨𝐫", "✦ Orbit ✦", "乂Drift乂"];
 
 export default function GamingPage() {
   return (

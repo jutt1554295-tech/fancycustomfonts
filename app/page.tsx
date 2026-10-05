@@ -102,7 +102,9 @@ export default function Home() {
           {toolCards.map((item) => (
             <Link className="tool-card" href={item.href} key={item.title}>
               <span className="tool-icon" aria-hidden="true">{item.icon}</span>
-              <h3>{item.title}</h3><p>{item.text}</p><span>Explore styles <span aria-hidden="true">↗</span></span>
+              <h3>{item.title}</h3>
+<p>{item.text}</p>
+<span className="tool-card-link">Explore styles ↗</span>
             </Link>
           ))}
         </div>
@@ -111,7 +113,7 @@ export default function Home() {
       <section className="feature-band page-width">
         <div>
           <span className="eyebrow">Simple by design</span>
-          <h2>Copy, paste and be a little more you</h2>
+          <h2>Copy, Paste and be a little more you</h2>
           <p>Choose a style, preview your text and use it wherever Unicode characters are supported. No account or download stands between you and your next profile refresh.</p>
         </div>
         <ul className="feature-list">
