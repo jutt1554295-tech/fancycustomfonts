@@ -85,8 +85,8 @@ export function AppearanceControl() {
         <section className="appearance-panel glass-panel" id="appearance-panel" role="dialog" aria-labelledby="appearance-title">
           <div className="appearance-panel-heading">
             <div>
-              <span className="eyebrow">Your workspace</span>
-              <h2 id="appearance-title">Customize appearance</h2>
+              <span className="eyebrow">GIVE IT YOUR VIBE</span>
+              <h2 id="appearance-title">Customize Appearance</h2>
             </div>
             <button className="appearance-close" type="button" aria-label="Close appearance settings" onClick={() => setOpen(false)}>×</button>
           </div>
