@@ -53,7 +53,7 @@ function readAppearance() {
 
 export function AppearanceProvider({ children }: { children: ReactNode }) {
   const [preferences, setPreferences] = useState<AppearancePreferences>({ ...defaultAppearance });
-  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("dark");
+  const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("light");
   const [initialized, setInitialized] = useState(false);
 
   useEffect(() => {
