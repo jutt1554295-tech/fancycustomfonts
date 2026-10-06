@@ -23,7 +23,7 @@ export type AppearancePreferences = {
 };
 
 export const defaultAppearance: AppearancePreferences = {
-  mode: "dark",
+  mode: "light",
   accent: "#67e8f9",
   brightness: 18,
   transparency: 55,
