@@ -61,7 +61,7 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Preview of text styles">
           <div className="hero-orbit" aria-hidden="true" />
-          <div className="hero-card glass-panel">
+          <div className="hero-card">
             <div className="hero-card-top"><span>LIVE PREVIEW</span><span className="window-dots" aria-hidden="true"><i /><i /><i /></span></div>
             <label>Your text</label>
             <div className="hero-card-input">Make it yours</div>
