@@ -1374,3 +1374,17 @@ line-clamp: 2;; }
     transition: none !important;
   }
 }
+@media (max-width: 720px) {
+  .hero {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+
+  .hero > .hero-grid {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+}
