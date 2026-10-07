@@ -1374,3 +1374,28 @@ line-clamp: 2;; }
     transition: none !important;
   }
 }
+@media (max-width: 720px) {
+  .hero-visual {
+    background: none !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    outline: 0 !important;
+    filter: none !important;
+  }
+
+  .hero-visual::before,
+  .hero-visual::after {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .hero-card {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-orbit {
+    z-index: 1;
+    background: transparent !important;
+  }
+}
