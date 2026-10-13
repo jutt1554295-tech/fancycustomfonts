@@ -50,29 +50,16 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <section className="hero">
         <div className="hero-copy">
-          <span className="eyebrow"><span className="status-dot" /> Your words, with a twist</span>
+          <span className="eyebrow">Your words, With a twist</span>
           <h1>Make ordinary text feel <em>anything but</em></h1>
           <p>Turn a few words into a style that feels like you. Explore Unicode text for bios, usernames, games and everywhere you share.</p>
           <div className="hero-actions">
             <a className="primary-button" href="#generator">Make fancy text <span aria-hidden="true">↓</span></a>
             <Link className="quiet-link" href="/fonts">Browse all styles <span aria-hidden="true">↗</span></Link>
           </div>
-          <div className="hero-proof"><span className="proof-stars" aria-hidden="true">✦</span><span>Free to use · No sign-up · Copy and paste</span></div>
+          <div className="hero-proof"><span className="proof-stars" aria-hidden="true"></span><span>Free to use · No sign-up · Copy and paste</span></div>
         </div>
-        <div className="hero-visual" aria-label="Preview of text styles">
-          <div className="hero-orbit" aria-hidden="true" />
-          <div className="hero-card">
-            <div className="hero-card-top"><span>LIVE PREVIEW</span><span className="window-dots" aria-hidden="true"><i /><i /><i /></span></div>
-            <label>Your text</label>
-            <div className="hero-card-input">Make it yours</div>
-            <div className="hero-sample"><span>𝐌𝐚𝐤𝐞 𝐢𝐭 𝐲𝐨𝐮𝐫𝐬</span><span className="sample-copy">Copy</span></div>
-            <div className="hero-sample"><span>𝑀𝑎𝑘𝑒 𝑖𝑡 𝑦𝑜𝑢𝑟𝑠</span><span className="sample-copy">Copy</span></div>
-            <div className="hero-sample"><span>Ｍａｋｅ　ｉｔ　ｙｏｕｒｓ</span><span className="sample-copy">Copy</span></div>
-            <div className="hero-card-foot"><span>Unicode text style</span><span>3 of 149+</span></div>
-          </div>
-          <div className="hero-sticker" aria-hidden="true">Aa</div>
-        </div>
-      </section>
+              </section>
 
       <div className="page-width">
         <FontExplorer mode="generator" initialText="Make it yours" />

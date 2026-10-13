@@ -47,7 +47,7 @@ export default function RootLayout({
   children,
 }: LayoutProps<"/">) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <AppearanceProvider>
           <a className="skip-link" href="#main-content">
