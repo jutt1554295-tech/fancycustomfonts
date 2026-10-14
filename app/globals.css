@@ -901,6 +901,7 @@ line-clamp: 2;; }
 .premium-footer-word-banner {
   position: relative;
   margin-top: 5rem;
+  padding: 0.3em 0 0.2em;
   overflow: hidden;
   pointer-events: none;
   user-select: none;
@@ -909,9 +910,9 @@ line-clamp: 2;; }
 .premium-footer-word-banner span {
   display: block;
   color: color-mix(in srgb, var(--ink) 6%, transparent);
-  font-size: clamp(3.5rem, 9vw, 7rem);
+  font-size: clamp(1.5rem, 8vw, 7rem);
   font-weight: 900;
-  line-height: 0.8;
+  line-height: 1.05;
   letter-spacing: -0.065em;
   white-space: nowrap;
   transform: translateX(-0.02em);
@@ -1072,7 +1073,7 @@ line-clamp: 2;; }
   }
 
   .premium-footer-word-banner span {
-    font-size: 4.4rem;
+    font-size: clamp(1.5rem, 8vw, 2.75rem);
   }
 
   .premium-footer-glow {
@@ -1387,4 +1388,415 @@ line-clamp: 2;; }
     border: 0 !important;
     box-shadow: none !important;
   }
+}
+/* Homepage hero without the Live Preview card */
+.hero {
+  grid-template-columns: minmax(0, 1fr);
+  min-height: auto;
+  justify-items: center;
+}
+
+.hero-copy {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 19px auto 22px;
+  text-wrap: balance;
+}
+
+.hero-copy > p {
+  max-width: 650px;
+  margin: 0 auto 28px;
+}
+
+.hero-actions {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hero-proof {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media (max-width: 390px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-proof {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* =========================================
+   Gun & Rifles Generator
+   Scoped styles — existing pages unaffected
+   ========================================= */
+
+.gun-rifles-tool {
+  width: 100%;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 4vw, 3.5rem) 0;
+  color: var(--ink, #191919);
+}
+
+.gun-rifles-heading {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.gun-rifles-eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+.gun-rifles-heading h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.gun-rifles-heading > p:last-child {
+  max-width: 620px;
+  margin: 1rem auto 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  opacity: 0.72;
+}
+
+.gun-rifles-input-panel {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line, #dedede);
+  border-radius: 20px;
+  background: var(--surface, #ffffff);
+}
+
+.gun-rifles-input-panel label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.gun-rifles-input-panel input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--line, #d5d5d5);
+  border-radius: 12px;
+  outline: none;
+  background: var(--background, #ffffff);
+  color: var(--ink, #191919);
+  font: inherit;
+}
+
+.gun-rifles-input-panel input:focus-visible {
+  outline: 2px solid var(--ink, #191919);
+  outline-offset: 3px;
+}
+
+.gun-rifles-hint {
+  margin: 0.65rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  opacity: 0.65;
+}
+
+.gun-rifles-results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.gun-rifles-results-heading h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  letter-spacing: -0.025em;
+}
+
+.gun-rifles-results-heading > span {
+  flex-shrink: 0;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid var(--line, #dedede);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.gun-rifles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gun-rifles-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 1.15rem;
+  border: 1px solid var(--line, #dedede);
+  border-radius: 18px;
+  background: var(--surface, #ffffff);
+  box-shadow: 0 5px 22px rgb(0 0 0 / 3%);
+  transition: border-color 180ms ease, transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.gun-rifles-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--ink, #777777);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 6%);
+}
+
+.gun-rifles-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.gun-rifles-number {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 10px;
+  background: var(--ink, #191919);
+  color: var(--background, #ffffff);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.gun-rifles-count {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+
+.gun-rifles-card h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.gun-rifles-description {
+  min-height: 2.8em;
+  margin: 0.45rem 0 1rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  opacity: 0.68;
+}
+
+.gun-rifles-preview {
+  display: flex;
+  min-width: 0;
+  min-height: 76px;
+  align-items: center;
+  margin-top: auto;
+  padding: 0.85rem;
+  overflow-x: auto;
+  border: 1px dashed var(--line, #d5d5d5);
+  border-radius: 12px;
+  background: var(--background, #fafafa);
+  scrollbar-width: thin;
+}
+
+.gun-rifles-preview span {
+  display: block;
+  min-width: max-content;
+  margin-inline: auto;
+  font-family: var(--font-geist-mono, monospace);
+  font-size: clamp(0.85rem, 1.3vw, 1rem);
+  line-height: 1.7;
+  white-space: pre;
+  text-align: center;
+}
+
+.gun-rifles-copy {
+  display: inline-flex;
+  min-height: 44px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.9rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--ink, #191919);
+  border-radius: 11px;
+  background: var(--ink, #191919);
+  color: var(--background, #ffffff);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.gun-rifles-copy:hover {
+  opacity: 0.82;
+}
+
+.gun-rifles-copy:active {
+  transform: scale(0.98);
+}
+
+.gun-rifles-copy:focus-visible {
+  outline: 2px solid var(--ink, #191919);
+  outline-offset: 3px;
+}
+
+.gun-rifles-error {
+  margin: 1.5rem 0 0;
+  color: #b42318;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.gun-rifles-footer-note {
+  max-width: 720px;
+  margin: 2rem auto 0;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  text-align: center;
+  opacity: 0.65;
+}
+
+@media (max-width: 900px) {
+  .gun-rifles-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .gun-rifles-tool {
+    padding-block: 1.5rem;
+  }
+
+  .gun-rifles-heading {
+    margin-bottom: 1.75rem;
+  }
+
+  .gun-rifles-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.85rem;
+  }
+
+  .gun-rifles-card {
+    padding: 1rem;
+  }
+
+  .gun-rifles-description {
+    min-height: 0;
+  }
+
+  .gun-rifles-preview {
+    min-height: 68px;
+  }
+
+  .gun-rifles-preview span {
+    font-size: 0.9rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gun-rifles-card,
+  .gun-rifles-copy {
+    transition: none;
+  }
+
+  .gun-rifles-card:hover,
+  .gun-rifles-copy:active {
+    transform: none;
+  }
+}
+.gun-rifles-style-preview {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  scrollbar-width: thin;
+  text-align: center;
+}
+/* FAQ: two-column layout on desktop, tablet and mobile */
+.faq-section .faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.faq-section .faq-list details {
+  min-width: 0;
+  height: fit-content;
+}
+
+.faq-section .faq-list summary {
+  min-width: 0;
+}
+
+.faq-section .faq-list .faq-question {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 560px) {
+  .faq-section .faq-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .faq-section .faq-list summary {
+    padding: 0.7rem 0.55rem;
+    font-size: 0.75rem;
+    line-height: 1.45;
+  }
+
+  .faq-section .faq-list .faq-answer {
+    font-size: 0.75rem;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Consistent logo shape with theme-controlled colors */
+.site-header .brand-mark,
+.premium-footer .premium-footer-mark {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  border-radius: 14px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1;
 }
