@@ -9,6 +9,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+    google: "q0wdrAzQ5GTSVmEXnxJGKY874q15sUYuTvcKztm4HfA",
+  },
 
   title: {
     default: "FancyCustomFonts | Stylish Text Generator",
