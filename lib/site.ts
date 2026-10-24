@@ -1,4 +1,7 @@
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://fancycustomfonts.com").replace(/\/+$/, "");
+export const siteUrl = (
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://fancycustomfonts-mq2v.vercel.app"
+).replace(/\/+$/, "");
 
 export const navigation = [
   { label: "Home", href: "/" },
