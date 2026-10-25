@@ -4,9 +4,26 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "Review the practical terms for using FancyCustomFonts and its Unicode text styling tools.",
-  alternates: { canonical: "/terms" },
-  openGraph: { title: "Terms of Use | FancyCustomFonts", description: "Terms for using the text styles and symbols on FancyCustomFonts.", url: `${siteUrl}/terms` },
+  description:
+    "Review the practical terms for using FancyCustomFonts and its Unicode text styling tools.",
+
+  alternates: {
+    canonical: "/terms",
+  },
+
+  openGraph: {
+    title: "Terms of Use | FancyCustomFonts",
+    description:
+      "Terms for using the text styles and symbols on FancyCustomFonts.",
+    url: `${siteUrl}/terms`,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Use | FancyCustomFonts",
+    description:
+      "Review the terms for using FancyCustomFonts and its Unicode text styling tools.",
+  },
 };
 
 export default function TermsPage() {
