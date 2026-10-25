@@ -5,9 +5,26 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Gaming Names and Stylish Gamer Text",
-  description: "Explore stylish Unicode text, username ideas and copy-ready symbols for gaming profiles, PUBG and BGMI names and Discord.",
-  alternates: { canonical: "/gaming" },
-  openGraph: { title: "Gaming Names and Stylish Gamer Text | FancyCustomFonts", description: "Find a distinctive Unicode look for your gaming name and profile.", url: `${siteUrl}/gaming` },
+  description:
+    "Explore stylish Unicode text, username ideas and copy-ready symbols for gaming profiles, PUBG and BGMI names and Discord.",
+
+  alternates: {
+    canonical: "/gaming",
+  },
+
+  openGraph: {
+    title: "Gaming Names and Stylish Gamer Text | FancyCustomFonts",
+    description:
+      "Find a distinctive Unicode look for your gaming name and profile.",
+    url: `${siteUrl}/gaming`,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Gaming Names and Stylish Gamer Text | FancyCustomFonts",
+    description:
+      "Explore stylish gaming names, Unicode text and copy-ready symbols for PUBG, BGMI and Discord.",
+  },
 };
 
 const ideas = ["Ｎｏｖａ", "『NightRider』", "꧁Echo꧂", "𝐕𝐚𝐥𝐨𝐫", "✦ Orbit ✦", "乂Drift乂"];
