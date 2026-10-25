@@ -4,9 +4,26 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About FancyCustomFonts",
-  description: "Learn why FancyCustomFonts exists and how its browser-based Unicode text styling works.",
-  alternates: { canonical: "/about" },
-  openGraph: { title: "About FancyCustomFonts", description: "A simple place to explore and copy Unicode text styles.", url: `${siteUrl}/about` },
+  description:
+    "Learn why FancyCustomFonts exists and how its browser-based Unicode text styling works.",
+
+  alternates: {
+    canonical: "/about",
+  },
+
+  openGraph: {
+    title: "About FancyCustomFonts",
+    description:
+      "A simple place to explore and copy Unicode text styles.",
+    url: `${siteUrl}/about`,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "About FancyCustomFonts | FancyCustomFonts",
+    description:
+      "Learn how FancyCustomFonts helps you explore, preview and copy Unicode text styles.",
+  },
 };
 
 export default function AboutPage() {
