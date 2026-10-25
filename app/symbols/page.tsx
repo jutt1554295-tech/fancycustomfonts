@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description: "Browse and copy useful Unicode stars, hearts, arrows, brackets, gaming symbols and decorative marks.",
   alternates: { canonical: "/symbols" },
   openGraph: { title: "Cool Symbols to Copy and Paste | FancyCustomFonts", description: "Browse copy-ready Unicode symbols by category.", url: `${siteUrl}/symbols` },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cool Symbols to Copy and Paste | FancyCustomFonts",
+    description:
+      "Browse and copy stars, hearts, arrows, gaming symbols and decorative Unicode characters.",
+  },
 };
 
 export default function SymbolsPage() {
