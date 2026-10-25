@@ -4,9 +4,26 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Read how FancyCustomFonts handles text entered into the browser-based generator and what to expect from the site.",
-  alternates: { canonical: "/privacy" },
-  openGraph: { title: "Privacy Policy | FancyCustomFonts", description: "How the browser-based text tools handle your information.", url: `${siteUrl}/privacy` },
+  description:
+    "Read how FancyCustomFonts handles text entered into the browser-based generator and what to expect from the site.",
+
+  alternates: {
+    canonical: "/privacy",
+  },
+
+  openGraph: {
+    title: "Privacy Policy | FancyCustomFonts",
+    description:
+      "How the browser-based text tools handle your information.",
+    url: `${siteUrl}/privacy`,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | FancyCustomFonts",
+    description:
+      "Learn how FancyCustomFonts handles text entered into its browser-based Unicode text tools.",
+  },
 };
 
 export default function PrivacyPage() {
