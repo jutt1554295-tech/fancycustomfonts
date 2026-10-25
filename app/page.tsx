@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     description: "Transform ordinary text into stylish Unicode text for your profiles and messages.",
     url: siteUrl,
   },
+  twitter: {
+  card: "summary_large_image",
+  title: "Fancy Text Generator | FancyCustomFonts",
+  description:
+    "Transform ordinary text into stylish Unicode text you can copy and paste for bios, usernames, gaming profiles and messages.",
+},
 };
 
 const categoryCards: { title: string; glyph: string; categories: FontCategory[]; href: string }[] = [
@@ -51,8 +57,12 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <span className="eyebrow">Your words, With a twist</span>
-          <h1>Make ordinary text feel <em>anything but</em></h1>
-          <p>Turn a few words into a style that feels like you. Explore Unicode text for bios, usernames, games and everywhere you share.</p>
+          <h1>Make ordinary text feel <em>anything but ordinary</em></h1>
+<p>
+  Use this free fancy text generator to turn ordinary words into stylish
+  Unicode text you can copy and paste into bios, usernames, gaming profiles
+  and messages.
+</p>
           <div className="hero-actions">
             <a className="primary-button" href="#generator">Make fancy text <span aria-hidden="true">↓</span></a>
             <Link className="quiet-link" href="/fonts">Browse all styles <span aria-hidden="true">↗</span></Link>
