@@ -74,6 +74,35 @@ export default function Home() {
       <div className="page-width">
         <FontExplorer mode="generator" initialText="Make it yours" />
       </div>
+      <section className="section-block page-width">
+  <div className="section-heading">
+    <div>
+      <span className="eyebrow">How it works</span>
+      <h2>How to use the fancy text generator</h2>
+    </div>
+    <p>
+      Turn plain text into copy-ready Unicode styles in three simple steps.
+    </p>
+  </div>
+
+  <div className="content-copy">
+    <ol>
+      <li>
+        <strong>Enter your text.</strong> Type a name, bio, caption or short
+        message into the generator above.
+      </li>
+      <li>
+        <strong>Choose a style.</strong> Preview bold, script, gothic,
+        small-caps and other available Unicode transformations.
+      </li>
+      <li>
+        <strong>Copy and paste.</strong> Copy your favourite result and test
+        it in your destination app. Character support varies by device and
+        platform.
+      </li>
+    </ol>
+  </div>
+</section>
 
       <section className="section-block page-width">
         <div className="section-heading">
