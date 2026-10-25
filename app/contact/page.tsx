@@ -4,9 +4,25 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact FancyCustomFonts",
-  description: "Contact FancyCustomFonts with a question, accessibility note, or suggestion for the Unicode text tools.",
-  alternates: { canonical: "/contact" },
-  openGraph: { title: "Contact FancyCustomFonts", description: "Send feedback or a question about the text tools.", url: `${siteUrl}/contact` },
+  description:
+    "Contact FancyCustomFonts with a question, accessibility note, or suggestion for the Unicode text tools.",
+
+  alternates: {
+    canonical: "/contact",
+  },
+
+  openGraph: {
+    title: "Contact FancyCustomFonts",
+    description: "Send feedback or a question about the text tools.",
+    url: `${siteUrl}/contact`,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact FancyCustomFonts",
+    description:
+      "Contact FancyCustomFonts with questions, accessibility feedback, or suggestions for our Unicode text tools.",
+  },
 };
 
 export default function ContactPage() {
