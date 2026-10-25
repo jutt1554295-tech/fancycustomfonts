@@ -7,7 +7,18 @@ export const metadata: Metadata = {
   title: "Fancy Fonts: Browse 149+ Unicode Text Styles",
   description: "Explore bold, cursive, gothic, small caps, circled and decorative Unicode text styles. Search, preview and copy fancy text for free.",
   alternates: { canonical: "/fonts" },
-  openGraph: { title: "Fancy Fonts | FancyCustomFonts", description: "Explore and copy 149+ Unicode text styles.", url: `${siteUrl}/fonts` },
+    openGraph: {
+    title: "Fancy Fonts | FancyCustomFonts",
+    description: "Explore and copy 149+ Unicode text styles.",
+    url: `${siteUrl}/fonts`,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Fancy Fonts | FancyCustomFonts",
+    description:
+      "Explore and copy 149+ Unicode text styles for bios, captions, messages and games.",
+  },
 };
 
 export default function FontsPage() {
