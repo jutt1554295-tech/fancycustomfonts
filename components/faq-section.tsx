@@ -89,6 +89,16 @@ export const faqItems = [
     answer:
       "Devices and apps render Unicode characters differently. Some may show boxes or missing characters.",
   },
+    {
+    question: "How do I repeat text online?",
+    answer:
+      "Enter your text in the Text Repeater, choose how many times to repeat it, select a separator, and copy the generated result.",
+  },
+  {
+    question: "Can I change the text style before repeating it?",
+    answer:
+      "Yes. Choose an available Unicode text style in the Text Repeater, select your repeat count and separator, then copy the result.",
+  },
 ];
 
 export function FaqSection() {

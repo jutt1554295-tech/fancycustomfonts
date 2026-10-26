@@ -17,11 +17,15 @@ const mainNavigation = [
     icon: "ƒ",
   },
   {
+    label: "Text Repeater",
+    href: "/tools/text-repeater",
+    icon: "↻",
+  },
+  {
     label: "Symbols",
     href: "/symbols",
     icon: "✦",
   },
-  
 ];
 
 export function SiteHeader() {
