@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Text Repeater | FancyCustomFonts",
     description:
-      "Repeat text, choose a stylish Unicode format, and copy your result.",
+      "Repeat text, choose a stylish Unicode format and copy your result.",
     url: `${siteUrl}/tools/text-repeater`,
   },
 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Text Repeater | FancyCustomFonts",
     description:
-      "Repeat words online with custom counts, separators, and stylish Unicode text.",
+      "Repeat words online with custom counts, separators and stylish Unicode text.",
   },
 };
 
@@ -51,7 +51,7 @@ export default function TextRepeaterPage() {
 
   <h2>Example: repeat text three times</h2>
   <p>
-    Enter <strong>Hello</strong>, set the repeat count to three,
+    Enter <strong>Hello</strong>, set the repeat count to three
     and choose a space separator. The result will be:
   </p>
   <p>
@@ -70,12 +70,13 @@ export default function TextRepeaterPage() {
   <h2>Change the text style</h2>
   <p>
     Choose an available Unicode style before copying the repeated
-    result. Different styles can make words look bold, decorative,
+    result. Different styles can make words look bold, decorative
     or distinctive. Character support and appearance vary across
     apps and devices, so check the result before sharing it.
   </p>
 
-  <h2>What is the text repeater limit?</h2>
+  <h2>What is the text repeater limit?
+  </h2>
   <p>
     This version supports up to 100 repetitions and 500 input
     characters. For very long text, check the generated result

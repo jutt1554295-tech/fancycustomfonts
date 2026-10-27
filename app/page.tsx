@@ -57,7 +57,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-copy">
           <span className="eyebrow">Your words, With a twist</span>
-          <h1>Make ordinary text feel <em>anything but ordinary</em></h1>
+          <h1>Fancy Font Generator for Stylish Text You Can <em>Copy & Paste</em></h1>
 <p>
   Use this free fancy text generator to turn ordinary words into stylish
   Unicode text you can copy and paste into bios, usernames, gaming profiles
