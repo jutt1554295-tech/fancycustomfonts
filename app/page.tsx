@@ -67,7 +67,7 @@ export default function Home() {
             <a className="primary-button" href="#generator">Make fancy text <span aria-hidden="true">↓</span></a>
             <Link className="quiet-link" href="/fonts">Browse all styles <span aria-hidden="true">↗</span></Link>
           </div>
-          <div className="hero-proof"><span className="proof-stars" aria-hidden="true"></span><span>Free to use · No sign-up · Copy and paste</span></div>
+          <div className="hero-proof"><span className="proof-stars" aria-hidden="true"></span><span>Free to use ◎ No sign-up ◎ Copy and paste</span></div>
         </div>
               </section>
 
