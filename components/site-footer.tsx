@@ -1,11 +1,13 @@
 import Link from "next/link";
 
+
 const exploreLinks = [
   { label: "Fonts", href: "/fonts" },
   { label: "Tools", href: "/tools" },
   { label: "Text Repeater", href: "/tools/text-repeater" },
   { label: "Symbols", href: "/symbols" },
   { label: "Gaming", href: "/gaming" },
+  { label: "Blog", href: "/blog" },
 ];
 
 const companyLinks = [
