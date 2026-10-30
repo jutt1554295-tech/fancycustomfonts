@@ -92,7 +92,7 @@ export const faqItems = [
     {
   question: "How can I repeat a word or sentence multiple times?",
   answer:
-    "Enter your text in the Text Repeater, choose how many times to repeat it, select a separator, and copy the generated result.",
+    "Enter your text in the Text Repeater, choose how many times to repeat it, select a separator and copy the generated result.",
 },
   {
     question: "Can I change the text style before repeating it?",

@@ -181,17 +181,11 @@ export function FontExplorer({
               ? "Gun & Rifles"
               : isLibrary
                 ? "Find your look"
-                : "Your words, Reimagined"}
+                : "Your Words, Reimagined"}
           </h2>
         </div>
 
-        <p className="result-count">
-          {isGunCategory
-            ? `${gunDesigns.length} gun designs`
-            : `${fontStyles.length}+ styles`}{" "}
-          <span aria-hidden="true">↗</span>
-        </p>
-      </div>
+        </div>
 
       <div className="input-panel glass-panel">
         <div className="input-label-row">
@@ -265,11 +259,6 @@ export function FontExplorer({
           )}
         </div>
 
-        <p className="match-count" aria-live="polite">
-          {isGunCategory
-            ? `${filteredGunDesigns.length} designs`
-            : `${filteredStyles.length} styles`}
-        </p>
       </div>
 
       <div className="category-scroll" aria-label="Filter styles by category">
@@ -444,16 +433,12 @@ export function FontExplorer({
             >
               Load more styles <span aria-hidden="true">↓</span>
             </button>
-
-            <span>
-              Showing {visibleStyles.length} of {filteredStyles.length}
-            </span>
           </div>
         )}
 
       {!isLibrary && !isGunCategory && (
         <a className="explore-all-link" href="/fonts">
-          Explore all {fontStyles.length}+ styles{" "}
+          Explore all styles{" "}
           <span aria-hidden="true">↗</span>
         </a>
       )}

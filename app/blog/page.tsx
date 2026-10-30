@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FancyCustomFonts Blog",
     description:
-      "Guides, ideas and tips for stylish Unicode text, symbols and creative usernames.",
+      "Guides, ideas and tips for stylish text, Unicode symbols and creative usernames.",
     type: "website",
     url: "/blog",
   },
@@ -73,15 +73,44 @@ export default function BlogPage() {
   return (
     <main className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
       <section className="mb-14 text-center sm:mb-16">
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-violet-600">
+        <p
+          className="mb-4 text-xs font-semibold uppercase tracking-[0.25em]"
+          style={{ color: "var(--accent)" }}
+        >
           The FancyCustomFonts Journal
         </p>
 
-        <h1 className="mx-auto max-w-4xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-          Ideas, Guides and Inspiration for Stylish Text
+        <h1
+          className="mx-auto max-w-5xl text-4xl font-extrabold leading-tight tracking-tight sm:text-6xl lg:text-7xl"
+          style={{ color: "var(--ink)" }}
+        >
+          Discover the World of
+
+          <span className="mt-2 block">
+            <span
+              className="font-serif italic"
+              style={{
+                backgroundImage:
+                  "linear-gradient(100deg, var(--accent), var(--accent-alt))",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+                fontFamily: "var(--display)",
+              }}
+            >
+              Fancy Fonts
+            </span>
+
+            <span style={{ color: "var(--ink)" }}>
+              {" "}&amp; Stylish Text
+            </span>
+          </span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
+        <p
+          className="mx-auto mt-6 max-w-2xl text-base leading-7 sm:text-lg"
+          style={{ color: "var(--muted)" }}
+        >
           Discover Unicode text styles, copy-and-paste symbols, creative
           usernames and practical tips for social media and gaming.
         </p>
@@ -89,14 +118,24 @@ export default function BlogPage() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link
             href="/fonts"
-            className="rounded-full border border-white/60 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-800 shadow-sm backdrop-blur-xl transition hover:bg-white"
+            className="rounded-full border px-5 py-2.5 text-sm font-medium shadow-sm backdrop-blur-xl transition hover:opacity-80"
+            style={{
+              borderColor: "var(--accent-border)",
+              background: "var(--glass-background)",
+              color: "var(--ink)",
+            }}
           >
             Explore Text Styles
           </Link>
 
           <Link
             href="/symbols"
-            className="rounded-full border border-white/60 bg-white/70 px-5 py-2.5 text-sm font-medium text-slate-800 shadow-sm backdrop-blur-xl transition hover:bg-white"
+            className="rounded-full border px-5 py-2.5 text-sm font-medium shadow-sm backdrop-blur-xl transition hover:opacity-80"
+            style={{
+              borderColor: "var(--accent-border)",
+              background: "var(--glass-background)",
+              color: "var(--ink)",
+            }}
           >
             Browse Symbols
           </Link>
@@ -106,19 +145,26 @@ export default function BlogPage() {
       <section aria-labelledby="latest-articles">
         <div className="mb-7 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-violet-600">
+            <p
+              className="mb-2 text-xs font-semibold uppercase tracking-[0.2em]"
+              style={{ color: "var(--accent)" }}
+            >
               Learn Something New
             </p>
 
             <h2
               id="latest-articles"
-              className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl"
+              className="text-2xl font-bold tracking-tight sm:text-3xl"
+              style={{ color: "var(--ink)" }}
             >
               Guides and Articles
             </h2>
           </div>
 
-          <p className="text-sm text-slate-500">
+          <p
+            className="text-sm"
+            style={{ color: "var(--muted)" }}
+          >
             Text styles, Symbols and Useful Tools
           </p>
         </div>
@@ -127,34 +173,58 @@ export default function BlogPage() {
           {posts.map((post) => (
             <article
               key={post.slug}
-              className="group flex h-full flex-col rounded-3xl border border-white/70 bg-white/65 p-6 shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-950/5 sm:p-7"
+              className="group flex h-full flex-col rounded-3xl border p-6 shadow-sm backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7"
+              style={{
+                borderColor: "var(--glass-border)",
+                background: "var(--glass-background)",
+                color: "var(--ink)",
+              }}
             >
               <div className="mb-5 flex items-center justify-between gap-3">
-                <span className="rounded-full border border-violet-100 bg-violet-50 px-3 py-1 text-xs font-medium text-violet-700">
+                <span
+                  className="rounded-full border px-3 py-1 text-xs font-medium"
+                  style={{
+                    borderColor: "var(--accent-border)",
+                    background:
+                      "color-mix(in srgb, var(--accent) 10%, transparent)",
+                    color: "var(--accent)",
+                  }}
+                >
                   {post.category}
                 </span>
 
-                <span className="text-xs text-slate-500">
+                <span
+                  className="text-xs"
+                  style={{ color: "var(--muted)" }}
+                >
                   {post.readTime}
                 </span>
               </div>
 
-              <h3 className="text-xl font-semibold leading-snug text-slate-900">
+              <h3
+                className="text-xl font-semibold leading-snug"
+                style={{ color: "var(--ink)" }}
+              >
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="outline-none transition group-hover:text-violet-700 focus-visible:underline"
+                  className="outline-none transition hover:opacity-75 focus-visible:underline"
+                  style={{ color: "var(--ink)" }}
                 >
                   {post.title}
                 </Link>
               </h3>
 
-              <p className="mt-4 flex-1 text-sm leading-6 text-slate-600">
+              <p
+                className="mt-4 flex-1 text-sm leading-6"
+                style={{ color: "var(--muted)" }}
+              >
                 {post.description}
               </p>
 
               <Link
                 href={`/blog/${post.slug}`}
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-violet-700 transition group-hover:gap-3"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold transition hover:gap-3"
+                style={{ color: "var(--accent)" }}
               >
                 Read article
                 <span aria-hidden="true">→</span>
@@ -164,24 +234,40 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <section className="mt-14 rounded-3xl border border-white/70 bg-white/55 p-7 text-center shadow-sm backdrop-blur-xl sm:mt-20 sm:p-10">
-        <h2 className="text-2xl font-bold tracking-tight text-slate-900">
+      <section
+        className="mt-14 rounded-3xl border p-7 text-center shadow-sm backdrop-blur-xl sm:mt-20 sm:p-10"
+        style={{
+          borderColor: "var(--glass-border)",
+          background: "var(--glass-background)",
+        }}
+      >
+        <h2
+          className="text-2xl font-bold tracking-tight"
+          style={{ color: "var(--ink)" }}
+        >
           Ready to create your own style?
         </h2>
 
-        <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-600 sm:text-base">
+        <p
+          className="mx-auto mt-3 max-w-xl text-sm leading-6 sm:text-base"
+          style={{ color: "var(--muted)" }}
+        >
           Try our text styles and symbols, then copy your favourites for
           usernames, bios, messages and more.
         </p>
 
-        
-<Link
-  href="/"
-  style={{ color: "#ffffff" }}
-  className="mt-6 inline-flex rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold transition hover:bg-slate-700"
->
-  Open Text Generator
-</Link>
+        <Link
+          href="/"
+          className="mt-6 inline-flex rounded-full border px-6 py-3 text-sm font-semibold transition hover:opacity-85"
+          style={{
+            background:
+              "linear-gradient(110deg, var(--accent), var(--accent-soft))",
+            borderColor: "var(--accent-border)",
+            color: "var(--accent-contrast)",
+          }}
+        >
+          Open Text Generator
+        </Link>
       </section>
     </main>
   );

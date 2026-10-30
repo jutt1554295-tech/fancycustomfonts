@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FaqSection } from "@/components/faq-section";
 import { FontExplorer } from "@/components/font-explorer";
-import { fontStyles, type FontCategory } from "@/lib/fonts";
+import type { FontCategory } from "@/lib/fonts";
 import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Fancy Text Generator: Copy and Paste Stylish Text",
-  description: "Transform ordinary text into stylish Unicode text for social bios, usernames, gaming and messages. Preview and copy 149+ styles instantly.",
+  description: "Transform ordinary text into stylish Unicode text for social bios, usernames, gaming and messages. Preview and copy stylish text instantly.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Fancy Text Generator | FancyCustomFonts",
@@ -113,7 +113,7 @@ export default function Home() {
           {categoryCards.map((item) => (
             <Link className="category-card" href={item.href} key={item.title}>
               <span className="category-glyph" aria-hidden="true">{item.glyph}</span>
-              <h3>{item.title}</h3><span>{item.categories.reduce((count, category) => count + fontStyles.filter((style) => style.category === category).length, 0)} styles</span>
+              <h3>{item.title}</h3>
             </Link>
           ))}
         </div>

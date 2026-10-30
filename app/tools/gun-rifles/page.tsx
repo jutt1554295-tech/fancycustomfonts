@@ -6,7 +6,7 @@ import { siteUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Gun & Rifles Name Generator",
   description:
-    "Create gaming names with nine different gun-inspired text designs. Enter your name, preview the styles, and copy your favourite.",
+    "Create gaming names with nine different gun-inspired text designs. Enter your name, preview the styles and copy your favourite.",
   alternates: {
     canonical: "/tools/gun-rifles",
   },

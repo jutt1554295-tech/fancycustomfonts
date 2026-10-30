@@ -9,7 +9,7 @@ export const tools = [
   { title: "Gun & Rifles", description: "Create copy-ready gaming names with 9 different gun-inspired text designs", icon: "⌖", href: "/fonts", status: "Try styles" },
   {
     title: "Text Repeater",
-    description: "Repeat words and sentences with custom counts, separators, and stylish Unicode text.",
+    description: "Repeat words and sentences with custom counts, separators and stylish Unicode text.",
     icon: "↻",
     href: "/tools/text-repeater",
     status: "Try tool",

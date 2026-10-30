@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Text Styling Tools | FancyCustomFonts",
     description:
-      "Find text styling tools for profiles, captions, gaming names, and copy-ready symbols.",
+      "Find text styling tools for profiles, captions, gaming names and copy-ready symbols.",
   },
 };
 
