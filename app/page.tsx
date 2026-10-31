@@ -61,7 +61,7 @@ export default function Home() {
 <p>
   Use this free fancy text generator to turn ordinary words into stylish
   Unicode text you can copy and paste into bios, usernames, gaming profiles
-  and messages.
+  and messages
 </p>
           <div className="hero-actions">
             <a className="primary-button" href="#generator">Make fancy text <span aria-hidden="true">↓</span></a>
@@ -80,25 +80,21 @@ export default function Home() {
       <span className="eyebrow">How it works</span>
       <h2>How to use the fancy text generator</h2>
     </div>
-    <p>
-      Turn plain text into copy-ready Unicode styles in three simple steps.
-    </p>
   </div>
 
   <div className="content-copy">
     <ol>
       <li>
-        <strong>Enter your text.</strong> Type a name, bio, caption or short
-        message into the generator above.
+        <strong>Enter your text :</strong> Type a name, bio, caption or short
+        message into the generator above
       </li>
       <li>
-        <strong>Choose a style.</strong> Preview bold, script, gothic,
-        small-caps and other available Unicode transformations.
+        <strong>Choose a style :</strong> Preview bold, script, gothic,
+        small-caps and other available Unicode transformations
       </li>
       <li>
-        <strong>Copy and paste.</strong> Copy your favourite result and test
-        it in your destination app. Character support varies by device and
-        platform.
+        <strong>Copy and paste :</strong> Copy your favourite result and test
+        it in your destination app
       </li>
     </ol>
   </div>
@@ -122,7 +118,6 @@ export default function Home() {
       <section className="section-block page-width">
         <div className="section-heading">
           <div><span className="eyebrow">Made for where you post</span><h2>Little tools for lots of uses</h2></div>
-          <p>From a cleaner profile name to a full-on gaming tag, find a look that fits the place you use it.</p>
         </div>
         <div className="tools-grid">
           {toolCards.map((item) => (
@@ -140,7 +135,7 @@ export default function Home() {
         <div>
           <span className="eyebrow">Simple by design</span>
           <h2>Copy, Paste and be a little more you</h2>
-          <p>Choose a style, preview your text and use it wherever Unicode characters are supported. No account or download stands between you and your next profile refresh.</p>
+          <p>Choose a style, preview your text and use it wherever Unicode characters are supported. No account or download stands between you and your next profile refresh</p>
         </div>
         <ul className="feature-list">
           <li><span>✓</span><span><strong>Instant previews</strong><br />See every transformation as you type</span></li>

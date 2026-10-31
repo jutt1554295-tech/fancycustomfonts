@@ -70,7 +70,7 @@ export function TextRepeater() {
           <h2>Text Repeater</h2>
           <p>
             Repeat any word or sentence, choose a Unicode text style,
-            and copy the result.
+            and copy the result
           </p>
         </div>
 

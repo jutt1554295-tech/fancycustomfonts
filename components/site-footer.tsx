@@ -12,7 +12,6 @@ const exploreLinks = [
 
 const companyLinks = [
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
   { label: "Privacy", href: "/privacy" },
   { label: "Terms", href: "/terms" },
 ];
@@ -50,12 +49,12 @@ export function SiteFooter() {
               feel{" "}
               <span className="premium-footer-accent">anything but</span>
               <br />
-              ordinary.
+              ordinary
             </h2>
 
             <p className="premium-footer-description">
               Stylish Unicode text for bios, usernames, gaming, social media
-              and everywhere you share.
+              and everywhere you share
             </p>
 
             <Link className="premium-footer-cta" href="/#generator">

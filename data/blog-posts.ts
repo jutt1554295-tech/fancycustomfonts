@@ -23,7 +23,7 @@ export const blogPosts: BlogPost[] = [
     category: "Unicode Basics",
     title: "Fancy Text Generator: How to Create Stylish Text to Copy and Paste",
     description:
-      "Learn how a fancy text generator works and how to create bold, italic, cursive and decorative Unicode text for profiles, messages and social media.",
+      "Learn how a fancy text generator works and how to create bold, italic, cursive and decorative Unicode text for profiles, messages and social media",
     readTime: "6 min read",
     sections: [
       {
@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     category: "Social Media",
     title: "Instagram Fonts for Bios: Make Stylish Text to Copy and Paste",
     description:
-      "Explore Instagram-style fonts for bios, display names and captions. Learn how to choose readable text and copy Unicode styles into your profile.",
+      "Explore Instagram-style fonts for bios, display names and captions. Learn how to choose readable text and copy Unicode styles into your profile",
     readTime: "6 min read",
     sections: [
       {
@@ -159,7 +159,7 @@ export const blogPosts: BlogPost[] = [
     category: "Gaming",
     title: "Stylish Gaming Names: Unicode Letters and Symbols for Your Profile",
     description:
-      "Find practical ideas for stylish gaming names and learn how to use decorative letters and symbols while keeping your name readable.",
+      "Find practical ideas for stylish gaming names and learn how to use decorative letters and symbols while keeping your name readable",
     readTime: "6 min read",
     sections: [
       {
@@ -223,7 +223,7 @@ export const blogPosts: BlogPost[] = [
     category: "Symbols",
     title: "Unicode Symbols to Copy and Paste: Hearts, Stars, Arrows and More",
     description:
-      "Browse ideas for copy-and-paste Unicode symbols and learn how to use decorative characters in bios, messages and usernames.",
+      "Browse ideas for copy-and-paste Unicode symbols and learn how to use decorative characters in bios, messages and usernames",
     readTime: "5 min read",
     sections: [
       {
@@ -287,7 +287,7 @@ export const blogPosts: BlogPost[] = [
     category: "Online Tools",
     title: "How to Repeat Text Online: Words, Lines and Copyable Patterns",
     description:
-      "Learn how to repeat text online for testing, creative patterns and messages. Find out how repetition counts and line breaks affect the result.",
+      "Learn how to repeat text online for testing, creative patterns and messages. Find out how repetition counts and line breaks affect the result",
     readTime: "5 min read",
     sections: [
       {
@@ -351,7 +351,7 @@ export const blogPosts: BlogPost[] = [
     category: "Text Styles",
     title: "Unicode Text Styles Explained: Bold, Italic, Cursive and More",
     description:
-      "Understand popular Unicode text styles including bold, italic, script, double-struck and small caps and learn when to use them.",
+      "Understand popular Unicode text styles including bold, italic, script, double-struck and small caps and learn when to use them",
     readTime: "7 min read",
     sections: [
       {

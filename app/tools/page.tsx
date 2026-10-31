@@ -35,7 +35,7 @@ export default function ToolsPage() {
         current="Tools"
         href="/tools"
         title="Text styling tools"
-        description="A growing toolkit for giving your words a little more character. Start with the live generator, or browse styles and symbols for the platform you have in mind."
+        description="A growing toolkit for giving your words a little more character. Start with the live generator, or browse styles and symbols for the platform you have in mind"
       />
 
       <div className="page-content">
@@ -57,7 +57,7 @@ export default function ToolsPage() {
         <p className="tools-note">
           The text generator and copy-ready symbol browser are available now.
           Platform-specific pages are planned; until then, the font library
-          provides styles that you can try across apps.
+          provides styles that you can try across apps
         </p>
       </div>
     </div>

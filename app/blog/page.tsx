@@ -23,7 +23,7 @@ const posts = [
     category: "Unicode Basics",
     title: "What Is Fancy Text? A Guide to Unicode Text Styles",
     description:
-      "Learn how fancy text works, how Unicode characters differ from ordinary text and how to copy and paste stylish text.",
+      "Learn how fancy text works, how Unicode characters differ from ordinary text and how to copy and paste stylish text",
     slug: "fancy-text-generator-guide",
     readTime: "5 min read",
   },
@@ -31,7 +31,7 @@ const posts = [
     category: "Social Media",
     title: "How to Create Stylish Text for an Instagram Bio",
     description:
-      "Explore decorative letters, symbols and practical ways to make your social media profile stand out.",
+      "Explore decorative letters, symbols and practical ways to make your social media profile stand out",
     slug: "instagram-fonts-for-bio",
     readTime: "5 min read",
   },
@@ -39,7 +39,7 @@ const posts = [
     category: "Gaming",
     title: "Stylish Gaming Names and Symbols: A Practical Guide",
     description:
-      "Find ideas for creative gaming usernames and learn how to copy special characters for your profiles.",
+      "Find ideas for creative gaming usernames and learn how to copy special characters for your profiles",
     slug: "stylish-gaming-names",
     readTime: "5 min read",
   },
@@ -47,7 +47,7 @@ const posts = [
     category: "Symbols",
     title: "Unicode Symbols to Copy and Paste",
     description:
-      "Discover useful decorative symbols, stars, arrows, hearts and other characters for messages and profiles.",
+      "Discover useful decorative symbols, stars, arrows, hearts and other characters for messages and profiles",
     slug: "unicode-symbols-copy-and-paste",
     readTime: "4 min read",
   },
@@ -55,7 +55,7 @@ const posts = [
     category: "Online Tools",
     title: "How to Repeat Text Online",
     description:
-      "Learn how to repeat words or phrases and use line breaks to format repeated text for different purposes.",
+      "Learn how to repeat words or phrases and use line breaks to format repeated text for different purposes",
     slug: "repeat-text-online",
     readTime: "4 min read",
   },
@@ -63,7 +63,7 @@ const posts = [
     category: "Text Styles",
     title: "Unicode Text Styles Explained",
     description:
-      "Understand bold, italic, double-struck, full-width, circled and other Unicode-inspired text styles.",
+      "Understand bold, italic, double-struck, full-width, circled and other Unicode-inspired text styles",
     slug: "unicode-text-styles-explained",
     readTime: "6 min read",
   },
@@ -112,7 +112,7 @@ export default function BlogPage() {
           style={{ color: "var(--muted)" }}
         >
           Discover Unicode text styles, copy-and-paste symbols, creative
-          usernames and practical tips for social media and gaming.
+          usernames and practical tips for social media and gaming
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -253,7 +253,7 @@ export default function BlogPage() {
           style={{ color: "var(--muted)" }}
         >
           Try our text styles and symbols, then copy your favourites for
-          usernames, bios, messages and more.
+          usernames, bios, messages and more
         </p>
 
         <Link

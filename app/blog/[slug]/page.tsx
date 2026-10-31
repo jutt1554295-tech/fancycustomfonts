@@ -195,7 +195,7 @@ export default async function BlogArticlePage({
           >
             Put this guide into practice with a relevant text tool.
             Preview your result and check that the selected characters
-            work in the app where you plan to use them.
+            work in the app where you plan to use them
           </p>
 
           <Link

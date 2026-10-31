@@ -11,7 +11,6 @@ const existingRoutes = [
   "/symbols",
   "/gaming",
   "/about",
-  "/contact",
   "/privacy",
   "/terms",
 ];

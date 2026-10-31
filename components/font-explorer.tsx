@@ -445,8 +445,8 @@ export function FontExplorer({
 
       <p className="unicode-note">
         {isGunCategory
-          ? "These are decorative gun-inspired text designs, not realistic gun illustrations. Unicode symbols can appear differently across games and devices."
-          : "These are Unicode text transformations, not installed fonts. Some characters may look different across apps and devices."}
+          ? "These are decorative gun-inspired text designs, not realistic gun illustrations. Unicode symbols can appear differently across games and devices"
+          : "These are Unicode text transformations, not installed fonts. Some characters may look different across apps and devices"}
       </p>
     </section>
   );

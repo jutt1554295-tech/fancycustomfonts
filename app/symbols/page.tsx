@@ -19,10 +19,10 @@ export const metadata: Metadata = {
 export default function SymbolsPage() {
   return (
     <div className="page-width">
-      <PageHeading current="Symbols" href="/symbols" title="Symbols to copy and paste" description="A tidy collection of stars, hearts, arrows, brackets and gaming marks. Choose a symbol to copy it, then paste it into a username, bio, message or caption." />
+      <PageHeading current="Symbols" href="/symbols" title="Symbols to copy and paste" description="A tidy collection of stars, hearts, arrows, brackets and gaming marks. Choose a symbol to copy it, then paste it into a username, bio, message or caption" />
       <div className="page-content">
         <SymbolBrowser />
-        <p className="tools-note">Symbols are Unicode characters. Their shape and availability can vary between fonts, devices and apps.</p>
+        <p className="tools-note">Symbols are Unicode characters. Their shape and availability can vary between fonts, devices and apps</p>
       </div>
     </div>
   );
