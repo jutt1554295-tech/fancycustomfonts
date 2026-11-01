@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 
 import { AppearanceProvider } from "@/components/appearance-provider";
@@ -9,6 +10,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
   verification: {
     google: "q0wdrAzQ5GTSVmEXnxJGKY874q15sUYuTvcKztm4HfA",
   },
@@ -19,31 +21,42 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Turn ordinary text into stylish Unicode text for bios, usernames, gaming and messages. Browse 149+ copy-ready text styles for free.",
+    "Turn ordinary text into stylish Unicode text for bios, usernames, gaming and messages. Explore copy-ready text styles for free.",
 
   alternates: {
     canonical: "/",
   },
 
   openGraph: {
-    type: "website",
-    siteName: "FancyCustomFonts",
-    title: "FancyCustomFonts | Stylish Text Generator",
-    description:
-      "Turn ordinary text into stylish Unicode text for bios, usernames, gaming and messages.",
-    url: siteUrl,
-  },
+  type: "website",
+  siteName: "FancyCustomFonts",
+  title: "FancyCustomFonts | Stylish Text Generator",
+  description:
+    "Turn ordinary text into stylish Unicode text for bios, usernames, gaming and messages.",
+  url: "/",
+  images: [
+    {
+      url: "/og-logo.png",
+      width: 1254,
+      height: 1254,
+      alt: "FancyCustomFonts Logo",
+    },
+  ],
+},
 
   twitter: {
-    card: "summary_large_image",
-    title: "FancyCustomFonts | Stylish Text Generator",
-    description:
-      "Turn ordinary text into stylish Unicode text for bios, usernames, gaming and messages.",
-  },
+  card: "summary_large_image",
+  title: "FancyCustomFonts | Stylish Text Generator",
+  description:
+    "Turn ordinary text into stylish Unicode text for bios, usernames, gaming and messages.",
+  images: ["/og-logo.png"],
+},
 
   icons: {
-    icon: "/icon.svg",
-  },
+  icon: "/og-logo.png",
+  shortcut: "/og-logo.png",
+  apple: "/og-logo.png",
+},
 };
 
 export default function RootLayout({
