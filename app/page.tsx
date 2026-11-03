@@ -5,22 +5,43 @@ import { FontExplorer } from "@/components/font-explorer";
 import type { FontCategory } from "@/lib/fonts";
 import { siteUrl } from "@/lib/site";
 
+
 export const metadata: Metadata = {
   title: "Fancy Text Generator: Copy and Paste Stylish Text",
-  description: "Transform ordinary text into stylish Unicode text for social bios, usernames, gaming and messages. Preview and copy stylish text instantly.",
-  alternates: { canonical: "/" },
-  openGraph: {
-    title: "Fancy Text Generator | FancyCustomFonts",
-    description: "Transform ordinary text into stylish Unicode text for your profiles and messages.",
-    url: siteUrl,
-  },
-  twitter: {
-  card: "summary_large_image",
-  title: "Fancy Text Generator | FancyCustomFonts",
+
   description:
-    "Transform ordinary text into stylish Unicode text you can copy and paste for bios, usernames, gaming profiles and messages.",
-},
+    "Transform ordinary text into stylish Unicode text for social bios, usernames, gaming and messages. Preview and copy stylish text instantly.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    siteName: "FancyCustomFonts",
+    title: "Fancy Text Generator | FancyCustomFonts",
+    description:
+      "Transform ordinary text into stylish Unicode text for your profiles and messages.",
+    url: siteUrl,
+    images: [
+      {
+        url: "/og-logo.png",
+        width: 1254,
+        height: 1254,
+        alt: "FancyCustomFonts Logo",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Fancy Text Generator | FancyCustomFonts",
+    description:
+      "Transform ordinary text into stylish Unicode text you can copy and paste for bios, usernames, gaming profiles and messages.",
+    images: ["/og-logo.png"],
+  },
 };
+
 
 const categoryCards: { title: string; glyph: string; categories: FontCategory[]; href: string }[] = [
   { title: "Bold & italic", glyph: "𝐀", categories: ["Bold", "Italic"], href: "/fonts#font-library" },
