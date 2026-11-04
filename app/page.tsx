@@ -6,10 +6,12 @@ import type { FontCategory } from "@/lib/fonts";
 import { siteUrl } from "@/lib/site";
 
 
+
 export const metadata: Metadata = {
-  title: "Fancy Text Generator: Copy and Paste Stylish Text",
-description:
-  "Transform ordinary text into stylish Unicode text for social bios, usernames, gaming and messages. Preview and copy stylish text instantly.",
+  title: "Fancy Text Generator | FancyCustomFonts",
+
+  description:
+    "Transform ordinary text into stylish Unicode text for your profiles and messages.",
 
   alternates: {
     canonical: "/",
@@ -25,8 +27,8 @@ description:
     images: [
       {
         url: "/og-logo.jpg",
-        width: 1254,
-        height: 1254,
+        width: 1200,
+        height: 630,
         alt: "FancyCustomFonts Logo",
       },
     ],
@@ -36,10 +38,11 @@ description:
     card: "summary_large_image",
     title: "Fancy Text Generator | FancyCustomFonts",
     description:
-      "Transform ordinary text into stylish Unicode text you can copy and paste for bios, usernames, gaming profiles and messages.",
+      "Transform ordinary text into stylish Unicode text for your profiles and messages.",
     images: ["/og-logo.jpg"],
   },
 };
+
 
 
 const categoryCards: { title: string; glyph: string; categories: FontCategory[]; href: string }[] = [
