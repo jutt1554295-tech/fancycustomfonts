@@ -8,9 +8,8 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Fancy Text Generator: Copy and Paste Stylish Text",
-
-  description:
-    "Transform ordinary text into stylish Unicode text for social bios, usernames, gaming and messages. Preview and copy stylish text instantly.",
+description:
+  "Transform ordinary text into stylish Unicode text for social bios, usernames, gaming and messages. Preview and copy stylish text instantly.",
 
   alternates: {
     canonical: "/",
