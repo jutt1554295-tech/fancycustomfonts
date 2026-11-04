@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: "/og-logo.png",
+        url: "/og-logo.jpg",
         width: 1254,
         height: 1254,
         alt: "FancyCustomFonts Logo",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Fancy Text Generator | FancyCustomFonts",
     description:
       "Transform ordinary text into stylish Unicode text you can copy and paste for bios, usernames, gaming profiles and messages.",
-    images: ["/og-logo.png"],
+    images: ["/og-logo.jpg"],
   },
 };
 
